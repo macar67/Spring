@@ -8,9 +8,13 @@ Maalesef authentication nedeniyle swagger kullanamadım bu nedenle gerekli bilgi
 Uygulama ayapa kalkdığında gerekli tablolar ve tablo içerisindeki test verileri eklenecektir.
 Tablolar ve verileri otomatik geliyor fakat eğer db yi bulamaması durumu olursa <users> adında bir db oluşturduktan sonra denerseniz verilerin geldiğini göreceksiniz
 Loglama için bir end-point koydum.Gerekli yerlerde  çapırıp görebilirsiniz fakat her durum için loglama yapmadım.Gerek görmedim.Aynı işlemleri tekrarlamak istemedim.
+Son olarak bazı bussiness rules ekledim Bunlar:
+        *Plaka sı olmayan yeni bir araç eklenemez.
+        *Rota tablosunda mevcut olmayan bir rota güzergazı bir araça assig edilemez.
+        *Bir rota en az 2 durağa sahip olmalı.
+Bu şekilde istenmeyen istekler atldığında gerekli uyarıcı mesajlar atılıyor.
 
-
-
+Request adreslerini ve ayrıntılarını aşağıdan öğrenebilirsiniz.
 
 
 *************** End -pointler **************************
